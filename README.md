@@ -1,7 +1,10 @@
-# PyFeat : A Python-based Effective Features Generation Tool from DNA, RNA, and Protein Sequences
 
-### `Authors:`
+# <center>PyFeat : A Python-based Effective Features Generation Tool from DNA, RNA, and Protein Sequences </center>
 
+## <center> `Authors: A, B and C` </center>
+### <center> United International University, Dhaka, Bangladesh  </center>
+
+&nbsp;
 
 ## 1. Download Package
 ### 1.1. Direct Download
@@ -202,9 +205,52 @@ user@machine:~$ python evaluateModel.py --optimumDatasetPath=optimumDataset.csv 
 &nbsp;
 &nbsp;
 
-### References
-[1]: https://www.ncbi.nlm.nih.gov/pubmed/25504848
- repDNA: a Python package to generate various modes of feature vectors for DNA sequences by incorporating user-defined physicochemical properties and sequence-order effects
+## References
 
+**[1]** Bin Liu et al. (2015) repDNA: a Python package to generate various
+modes of feature vectors for DNA sequences by
+incorporating user-defined physicochemical
+properties and sequence-order effects. Bioinformatics, 31(8), 1307–1309
+
+**[2]** Dong-Sheng Cao et al. (2013) propy: a tool to generate various modes of Chou’s
+PseAAC. Bioinformatics, 29, 960–962.
+
+
+**[3]** Bin Liu et al. (2015) Pse-in-One: a web server for generating various
+modes of pseudo components of DNA, RNA, and
+protein sequences. Nucleic Acids Research, Vol. 43, Web Server issue W65–W71
+
+**[4]** Bin Liu et al. (2017) Pse-Analysis: a python package for DNA/RNA and protein/peptide sequence analysis based on pseudo components and kernel methods. Oncotarget, Vol. 8, (No. 8), pp: 13338-13343
+
+**[5]** Bin Liu (2017) BioSeq-Analysis: a platform for DNA, RNA and protein
+sequence analysis based on machine learning
+approaches. Briefings in Bioinformatics, 1–15
+
+**[6]** Zhen Chen et al. (2018) iFeature: a python package and web server for
+features extraction and selection from protein
+and peptide sequences. Bioinformatics, doi: 10.1093/bioinformatics/bty140
+
+<!-- [1] repDNA : a Python package to generate various modes of feature vectors for DNA sequences by incorporating user-defined physicochemical properties and sequence-order effects
+
+[2] propy propy -->
+
+
+<!-- ### 4. Code Description :
+- **Features Generation :**
+  ```console
+  user@machine:~$ python main.py <arguments>
+  ```
+  Note : It will provide datasets named **fullDataset.csv** and **optimumDataset.csv** from FASTA sequences and class label.
+
+
+- **Run Machine Learning Classifiers :**
+  ``` console
+  user@machine:~$ python runClassifiers.py <arguments>
+  ```
+  Or, if we want to write results in a **.TXT** file then type:
+
+  
+ -->
+  
 
 
