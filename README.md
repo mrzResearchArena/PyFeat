@@ -173,7 +173,7 @@ user@machine:~$ python trainModel.py --dataset=optimumDataset.csv --model=LR
 |     :---       |    :---:     |  :---:       |  :---:    | ---:|
 | --dataset | -data  | string | --dataset=optimumDataset.csv | Enter a UNIX-like path for a .csv file; Example: /home/User/dataset.csv |
 |--model|-m|string|--model=LR|We can use LR, SVM, KNN, DT, SVM, NB, Bagging, RF, AB, GB, and LDA as an option; All options are case sensitive.|
-| --K | -k  | integer | --K=5 | Only for KNN classifier; Number of neighbor |
+| --K | -k  | integer | --K=5 | Only for the KNN classifier; Number of neighbor |
 
 **Note:** LR, SVM, KNN, DT, NB, Bagging, RF, AB, GB, and LDA represents Logistics Regression, Support Vector Machine, k-Nearest Neighbor, Decision Tree, Naive Bayes, Bagging, Random Forest, AdaBoost, Gradient Boosting, Linear Discriminant Analysis classifier respectively.
 
