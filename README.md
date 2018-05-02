@@ -128,8 +128,8 @@ user@machine:~$ python main.py -seq=DNA -fa=/home/mrz/independentFASTAs.txt -la=
 |triMonoKGap| XXX_X |when --kGap=1, 256 features for DNA/RNA and 160,000 features for protein|DNA, RNA, Protein|
 |triDiKGap| XXX_XX |when --kGap=1, 1024 features for DNA/RNA and 3,200,000 features for protein|DNA, RNA, Protein|
 
-`Note : When sequence becomes DNA, RNA, and Protein then X = {A,C,G,T}, X = {A,C,G,U}, and
-X = {A,C,D,E,F,G,H,I,K,L,M,N,P,Q,R,S,T,V,W,Y} respectively.`
+**Note:** When sequence becomes DNA, RNA, and Protein then X = {A,C,G,T}, X = {A,C,G,U}, and
+X = {A,C,D,E,F,G,H,I,K,L,M,N,P,Q,R,S,T,V,W,Y} respectively.
 
 
 &nbsp;
@@ -161,7 +161,7 @@ user@machine:~$ python runClassifiers.py --nFCV=10 --dataset=optimumDataset.csv 
 ### 3.3. Training Model (Optional)
 
 ```console
-user@machine:~$ python trainModel.py --dataset=optimumDataset.csv
+user@machine:~$ python trainModel.py --dataset=optimumDataset.csv --model=LR
 ```
 
 **Note #1:** It will provide a **dumpModel.pkl** from the user provides binary class dataset (**.csv** format). <br>
@@ -172,6 +172,9 @@ user@machine:~$ python trainModel.py --dataset=optimumDataset.csv
 |   Argument     |   Optional   |     Type     |   Default | Help   |
 |     :---       |    :---:     |  :---:       |  :---:    | ---:|
 | --dataset | -data  | string | --dataset=optimumDataset.csv | Enter a UNIX-like path for a .csv file; Example: /home/User/dataset.csv |
+|--model|-m|string|--model=LR|We can use LR, SVM, KNN, DT, SVM, NB, Bagging, RF, AB, GB, and LDA as an option; All options are case sensitive.|
+
+**Note:** LR, SVM, KNN, DT, NB, Bagging, RF, AB, GB, and LDA represents Logistics Regression, Support Vector Machine, k-Nearest Neighbor, Decision Tree, Naive Bayes, Bagging, Random Forest, AdaBoost, Gradient Boosting, Linear Discriminant Analysis classifier respectively.
 
 &nbsp;
 &nbsp;
@@ -217,7 +220,5 @@ user@machine:~$ python evaluateModel.py --optimumDatasetPath=optimumDataset.csv 
   
  -->
   
-
-
 
 
