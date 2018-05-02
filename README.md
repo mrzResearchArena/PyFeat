@@ -202,24 +202,9 @@ user@machine:~$ python evaluateModel.py --optimumDatasetPath=optimumDataset.csv 
 &nbsp;
 &nbsp;
 
+### References
+[1]: https://www.ncbi.nlm.nih.gov/pubmed/25504848
+ repDNA: a Python package to generate various modes of feature vectors for DNA sequences by incorporating user-defined physicochemical properties and sequence-order effects
 
-
-<!-- ### 4. Code Description :
-- **Features Generation :**
-  ```console
-  user@machine:~$ python main.py <arguments>
-  ```
-  Note : It will provide datasets named **fullDataset.csv** and **optimumDataset.csv** from FASTA sequences and class label.
-
-
-- **Run Machine Learning Classifiers :**
-  ``` console
-  user@machine:~$ python runClassifiers.py <arguments>
-  ```
-  Or, if we want to write results in a **.TXT** file then type:
-
-  
- -->
-  
 
 
