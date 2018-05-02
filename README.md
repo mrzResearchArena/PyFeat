@@ -2,7 +2,6 @@
 # <center>PyFeat : A Python-based Effective Features Generation Tool from DNA, RNA, and Protein Sequences </center>
 
 ## <center> `Authors: A, B and C` </center>
-### <center> United International University, Dhaka, Bangladesh  </center>
 
 &nbsp;
 
@@ -84,7 +83,7 @@ user@machine:~$ python main.py -seq=DNA -fa=/home/mrz/independentFASTAs.txt -la=
 
 &nbsp;
 
-#### Table 1: Arguments Details for the Features Generation
+### Table 1: Arguments Details for the Features Generation
 |   Argument     |   Optional   |     Type     |   Default | Help   |
 |     :---       |    :---:     |  :---:       |  :---:    | ---:|
 | --sequenceType | -seq | string | --sequenceType=DNA | DNA, RNA, and Protein (prot); Case is not sensitive. |
@@ -114,7 +113,7 @@ user@machine:~$ python main.py -seq=DNA -fa=/home/mrz/independentFASTAs.txt -la=
 &nbsp;
 &nbsp;
 
-#### Table 2: Features Description
+### Table 2: Features Description
 | Feature Name | Feature Structure / Formula | Number of Features | Applicable |
 | :---         |        :---:      |         :---:      |    ---:    |
 |zCurve| x_axis = (A+G)-(C+T); y_axis = (A+C)-(G+T); z_axis = (A+T)-(G+C) | 3 features for DNA/RNA | DNA, RNA |
@@ -152,7 +151,7 @@ user@machine:~$ python runClassifiers.py --nFCV=10 --dataset=optimumDataset.csv 
 
 &nbsp;
 
-#### Table 3: Arguments Details for the Machine Learning Classifiers
+### Table 3: Arguments Details for the Machine Learning Classifiers
 |   Argument     |   Optional   |     Type     |   Default | Help   |
 |     :---       |    :---:     |  :---:       |  :---:    | ---:|
 | --nFCV | -cv | integer | --nFCV=10 | How many numbers of cross-validation? |
@@ -171,7 +170,7 @@ user@machine:~$ python trainModel.py --dataset=optimumDataset.csv --model=LR
 
 &nbsp;
 
-#### Table 4: Arguments Details for Training Model
+### Table 4: Arguments Details for Training Model
 |   Argument     |   Optional   |     Type     |   Default | Help   |
 |     :---       |    :---:     |  :---:       |  :---:    | ---:|
 | --dataset | -data  | string | --dataset=optimumDataset.csv | Enter a UNIX-like path for a .csv file; Example: /home/User/dataset.csv |
@@ -194,7 +193,7 @@ user@machine:~$ python evaluateModel.py --optimumDatasetPath=optimumDataset.csv 
 
 &nbsp;
 
-#### Table 5: Arguments Details for Evaluation Model
+### Table 5: Arguments Details for Evaluation Model
 |   Argument     |   Optional   |     Type     |   Default | Help   |
 |     :---       |    :---:     |  :---:       |  :---:    | ---:|
 | --optimumDatasetPath | -optimumPath  | string | --optimumDatasetPath=optimumDataset.csv | Enter a UNIX-like path for a .csv file; Example: /home/User/dataset.csv |
@@ -229,28 +228,4 @@ approaches. Briefings in Bioinformatics, 1–15
 **[6]** Zhen Chen et al. (2018) iFeature: a python package and web server for
 features extraction and selection from protein
 and peptide sequences. Bioinformatics, doi: 10.1093/bioinformatics/bty140
-
-<!-- [1] repDNA : a Python package to generate various modes of feature vectors for DNA sequences by incorporating user-defined physicochemical properties and sequence-order effects
-
-[2] propy propy -->
-
-
-<!-- ### 4. Code Description :
-- **Features Generation :**
-  ```console
-  user@machine:~$ python main.py <arguments>
-  ```
-  Note : It will provide datasets named **fullDataset.csv** and **optimumDataset.csv** from FASTA sequences and class label.
-
-
-- **Run Machine Learning Classifiers :**
-  ``` console
-  user@machine:~$ python runClassifiers.py <arguments>
-  ```
-  Or, if we want to write results in a **.TXT** file then type:
-
-  
- -->
-  
-
 
