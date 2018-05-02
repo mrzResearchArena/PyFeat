@@ -12,10 +12,25 @@ import numpy as np
 ### Fixed State ###
 # np.random.seed(seed=111)
 
+# scikit-learn :
+from sklearn.linear_model import LogisticRegression, SGDClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.svm import SVC
+from sklearn.naive_bayes import GaussianNB
+from sklearn.ensemble import BaggingClassifier, \
+    RandomForestClassifier, \
+    AdaBoostClassifier, \
+    GradientBoostingClassifier, \
+    ExtraTreesClassifier
+
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+
+
+
 def train(args):
 
     ### Load Dataset ###
-
     D = pd.read_csv(args.dataset, header=None)
 
     ### Splitting dataset into X, Y ###
@@ -34,32 +49,59 @@ def train(args):
     X_train = scale.fit_transform(X_train)
 
 
-    # ### Scaling using hands-on ###
-    # storeMeanSD = []
-    # for i in range(X_train.shape[1]):
-    #     eachFeature = X_train[:, i]
-    #     MEAN = np.mean(eachFeature)
-    #     SD = np.std(eachFeature)
-    #     ### Stored mean and standard deviation for each feature ###
-    #     storeMeanSD.append((MEAN, SD))
-    #
-    # storeMeanSD = np.array(storeMeanSD)
-    #
-    #
-    # scalingX_train = []
-    # for i in range(X_train.shape[1]):
-    #     eachFeature = X_train[:, i]
-    #     v = (eachFeature - storeMeanSD[i][0]) / (storeMeanSD[i][1])
-    #     scalingX_train.append(v)
-    #
-    # X_train = np.array(scalingX_train).T
-    #
+    ### Run Machine Learning Model ###
+    print('Model training using ', end='')
+
+    #1. using LR:
+    if args.model == 'LR':
+        model = LogisticRegression()
+        print('LR ', end='')
+
+    #2. using KNN:
+    if args.model == 'KNN':
+        model = KNeighborsClassifier(n_neighbors=args.K)
+        print('KNN ', end='')
+
+    #3. using DT:
+    if args.model == 'DT':
+        model = DecisionTreeClassifier()
+        print('DT ', end='')
+
+    #4. using SVM:
+    if args.model == 'SVM':
+        model = SVC(probability=True)
+        print('SVM ', end='')
 
 
-    ### Run Machine Learning Model (best)  ###
-    from sklearn.linear_model import LogisticRegression
-    model = LogisticRegression(penalty='l2', C=0.10, max_iter=500, solver='sag')
+    #5. using NB:
+    if args.model == 'NB':
+        model = GaussianNB()
+        print('NB ',end='')
 
+    #6. using Bagging:
+    if args.model == 'Bagging':
+        model = BaggingClassifier()
+        print('Bagging ', end='')
+
+    #7. using RF:
+    if args.model == 'RF':
+        model = RandomForestClassifier()
+        print('RF ', end='')
+
+    #8. using AB:
+    if args.model == 'AB':
+        model = AdaBoostClassifier()
+        print('AB' , end='')
+
+    #9. using GB:
+    if args.model == 'GB':
+        model = GradientBoostingClassifier()
+        print('GB ', end='')
+
+    #10. using LDA:
+    if args.model == 'LDA':
+        model = LinearDiscriminantAnalysis()
+        print('LDA ', end='')
 
     '''
     You can use any model instead of logistics regression,
@@ -86,14 +128,30 @@ def train(args):
     #     pickle.dump(model, pickleFile)
     ##############################
 
-    print('Model training is done.')
+    print('classifier.')
 
 
 import argparse
 
 p = argparse.ArgumentParser(description='Training the model with LR.')
 p.add_argument('-data', '--dataset', type=str, help='~/dataset.csv', default='optimumDataset.csv')
+
+# p.add_argument('-lr', '--LR', type=int, help='using Logistics Regression', default=0, choices=[0, 1])
+# p.add_argument('-svm', '--SVM', type=int, help='using Logistics Regression', default=0, choices=[0, 1])
+#
+# p.add_argument('-knn', '--KNN', type=int, help='using Logistics Regression', default=0, choices=[0, 1])
+p.add_argument('-k', '--K', type=int, help='value of k for KNN', default=5)
+
+# p.add_argument('-dt', '--DT', type=int, help='using Logistics Regression', default=0, choices=[0, 1])
+# p.add_argument('-nb', '--NB', type=int, help='using Logistics Regression', default=0, choices=[0, 1])
+# p.add_argument('-bag', '--Bagging', type=int, help='using Logistics Regression', default=0, choices=[0, 1])
+# p.add_argument('-rf', '--RF', type=int, help='using Logistics Regression', default=0, choices=[0, 1])
+# p.add_argument('-ab', '--AB', type=int, help='using Logistics Regression', default=0, choices=[0, 1])
+# p.add_argument('-gb', '--GB', type=int, help='using Logistics Regression', default=0, choices=[0, 1])
+# p.add_argument('-lda', '--LDA', type=int, help='using Logistics Regression', default=0, choices=[0, 1])
+
+p.add_argument('-m', '--model', type=str, help='choose a model', default='LR', choices=['LR','SVM','KNN','DT','SVM','NB','Bagging','RF','AB','GB','LDA',])
+
 args = p.parse_args()
 
 train(args)
-
