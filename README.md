@@ -1,7 +1,8 @@
 
 # <center>PyFeat : A Python-based Effective Features Generation Tool from DNA, RNA, and Protein Sequences </center>
 
-## <center> `Authors: A, B and C` </center>
+## <center> `Authors:` </center>
+<!-- ### <center> United International University, Dhaka, Bangladesh  </center> -->
 
 &nbsp;
 
@@ -83,7 +84,7 @@ user@machine:~$ python main.py -seq=DNA -fa=/home/mrz/independentFASTAs.txt -la=
 
 &nbsp;
 
-### Table 1: Arguments Details for the Features Generation
+#### Table 1: Arguments Details for the Features Generation
 |   Argument     |   Optional   |     Type     |   Default | Help   |
 |     :---       |    :---:     |  :---:       |  :---:    | ---:|
 | --sequenceType | -seq | string | --sequenceType=DNA | DNA, RNA, and Protein (prot); Case is not sensitive. |
@@ -113,7 +114,7 @@ user@machine:~$ python main.py -seq=DNA -fa=/home/mrz/independentFASTAs.txt -la=
 &nbsp;
 &nbsp;
 
-### Table 2: Features Description
+#### Table 2: Features Description
 | Feature Name | Feature Structure / Formula | Number of Features | Applicable |
 | :---         |        :---:      |         :---:      |    ---:    |
 |zCurve| x_axis = (A+G)-(C+T); y_axis = (A+C)-(G+T); z_axis = (A+T)-(G+C) | 3 features for DNA/RNA | DNA, RNA |
@@ -151,7 +152,7 @@ user@machine:~$ python runClassifiers.py --nFCV=10 --dataset=optimumDataset.csv 
 
 &nbsp;
 
-### Table 3: Arguments Details for the Machine Learning Classifiers
+#### Table 3: Arguments Details for the Machine Learning Classifiers
 |   Argument     |   Optional   |     Type     |   Default | Help   |
 |     :---       |    :---:     |  :---:       |  :---:    | ---:|
 | --nFCV | -cv | integer | --nFCV=10 | How many numbers of cross-validation? |
@@ -170,7 +171,7 @@ user@machine:~$ python trainModel.py --dataset=optimumDataset.csv --model=LR
 
 &nbsp;
 
-### Table 4: Arguments Details for Training Model
+#### Table 4: Arguments Details for Training Model
 |   Argument     |   Optional   |     Type     |   Default | Help   |
 |     :---       |    :---:     |  :---:       |  :---:    | ---:|
 | --dataset | -data  | string | --dataset=optimumDataset.csv | Enter a UNIX-like path for a .csv file; Example: /home/User/dataset.csv |
@@ -193,7 +194,7 @@ user@machine:~$ python evaluateModel.py --optimumDatasetPath=optimumDataset.csv 
 
 &nbsp;
 
-### Table 5: Arguments Details for Evaluation Model
+#### Table 5: Arguments Details for Evaluation Model
 |   Argument     |   Optional   |     Type     |   Default | Help   |
 |     :---       |    :---:     |  :---:       |  :---:    | ---:|
 | --optimumDatasetPath | -optimumPath  | string | --optimumDatasetPath=optimumDataset.csv | Enter a UNIX-like path for a .csv file; Example: /home/User/dataset.csv |
@@ -206,26 +207,29 @@ user@machine:~$ python evaluateModel.py --optimumDatasetPath=optimumDataset.csv 
 
 ## References
 
-**[1]** Bin Liu et al. (2015) repDNA: a Python package to generate various
-modes of feature vectors for DNA sequences by
-incorporating user-defined physicochemical
-properties and sequence-order effects. Bioinformatics, 31(8), 1307–1309
+**[ 1 ]** Bin Liu, Fule Liu, Longyun Fang, Xiaolong Wang, and Kuo-Chen Chou. repdna: a python pack-
+age to generate various modes of feature vectors for dna sequences by incorporating user-defined
+physicochemical properties and sequence-order effects. Bioinformatics, 31(8):1307–1309, 2014.
 
-**[2]** Dong-Sheng Cao et al. (2013) propy: a tool to generate various modes of Chou’s
-PseAAC. Bioinformatics, 29, 960–962.
+**[ 2 ]** Dong-Sheng Cao, Qing-Song Xu, and Yi-Zeng Liang. propy: a tool to generate various modes of
+chous pseaac. Bioinformatics, 29(7):960–962, 2013.
 
+**[ 3 ]** Bin Liu. Bioseq-analysis: a platform for dna, rna and protein sequence analysis based on machine
+learning approaches. Briefings in bioinformatics, 2017.
 
-**[3]** Bin Liu et al. (2015) Pse-in-One: a web server for generating various
-modes of pseudo components of DNA, RNA, and
-protein sequences. Nucleic Acids Research, Vol. 43, Web Server issue W65–W71
+**[ 4 ]** Zhen Chen, Pei Zhao, Fuyi Li, André Leier, Tatiana T Marquez-Lago, Yanan Wang, Geoffrey I Webb,
+A Ian Smith, Roger J Daly, Kuo-Chen Chou, et al. ifeature: a python package and web server for
+features extraction and selection from protein and peptide sequences. Bioinformatics, 1:4, 2018.
 
-**[4]** Bin Liu et al. (2017) Pse-Analysis: a python package for DNA/RNA and protein/peptide sequence analysis based on pseudo components and kernel methods. Oncotarget, Vol. 8, (No. 8), pp: 13338-13343
+**[ 5 ]** Bin Liu, Hao Wu, Deyuan Zhang, Xiaolong Wang, and Kuo-Chen Chou. Pse-analysis: a python
+package for dna/rna and protein/peptide sequence analysis based on pseudo components and kernel
+methods. Oncotarget, 8(8):13338, 2017.
 
-**[5]** Bin Liu (2017) BioSeq-Analysis: a platform for DNA, RNA and protein
-sequence analysis based on machine learning
-approaches. Briefings in Bioinformatics, 1–15
+**[ 6 ]** Bin Liu, Fule Liu, Xiaolong Wang, Junjie Chen, Longyun Fang, and Kuo-Chen Chou. Pse-in-one: a
+web server for generating various modes of pseudo components of dna, rna, and protein sequences.
+Nucleic acids research, 43(W1):W65–W71, 2015.
 
-**[6]** Zhen Chen et al. (2018) iFeature: a python package and web server for
-features extraction and selection from protein
-and peptide sequences. Bioinformatics, doi: 10.1093/bioinformatics/bty140
+**[ 7 ]** Fabian Pedregosa, Gaël Varoquaux, Alexandre Gramfort, Vincent Michel, Bertrand Thirion, Olivier
+Grisel, Mathieu Blondel, Peter Prettenhofer, Ron Weiss, Vincent Dubourg, et al. Scikit-learn: Ma-
+chine learning in python. Journal of machine learning research, 12(Oct):2825–2830, 2011.
 
