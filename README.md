@@ -207,29 +207,28 @@ user@machine:~$ python evaluateModel.py --optimumDatasetPath=optimumDataset.csv 
 
 ## References
 
-**[ 1 ]** Bin Liu, Fule Liu, Longyun Fang, Xiaolong Wang, and Kuo-Chen Chou. repdna: a python pack-
+**[1]** Bin Liu, Fule Liu, Longyun Fang, Xiaolong Wang, and Kuo-Chen Chou. repdna: a python pack-
 age to generate various modes of feature vectors for dna sequences by incorporating user-defined
 physicochemical properties and sequence-order effects. Bioinformatics, 31(8):1307–1309, 2014.
 
-**[ 2 ]** Dong-Sheng Cao, Qing-Song Xu, and Yi-Zeng Liang. propy: a tool to generate various modes of
+**[2]** Dong-Sheng Cao, Qing-Song Xu, and Yi-Zeng Liang. propy: a tool to generate various modes of
 chous pseaac. Bioinformatics, 29(7):960–962, 2013.
 
-**[ 3 ]** Bin Liu. Bioseq-analysis: a platform for dna, rna and protein sequence analysis based on machine
+**[3]** Bin Liu. Bioseq-analysis: a platform for dna, rna and protein sequence analysis based on machine
 learning approaches. Briefings in bioinformatics, 2017.
 
-**[ 4 ]** Zhen Chen, Pei Zhao, Fuyi Li, André Leier, Tatiana T Marquez-Lago, Yanan Wang, Geoffrey I Webb,
+**[4]** Zhen Chen, Pei Zhao, Fuyi Li, André Leier, Tatiana T Marquez-Lago, Yanan Wang, Geoffrey I Webb,
 A Ian Smith, Roger J Daly, Kuo-Chen Chou, et al. ifeature: a python package and web server for
 features extraction and selection from protein and peptide sequences. Bioinformatics, 1:4, 2018.
 
-**[ 5 ]** Bin Liu, Hao Wu, Deyuan Zhang, Xiaolong Wang, and Kuo-Chen Chou. Pse-analysis: a python
+**[5]** Bin Liu, Hao Wu, Deyuan Zhang, Xiaolong Wang, and Kuo-Chen Chou. Pse-analysis: a python
 package for dna/rna and protein/peptide sequence analysis based on pseudo components and kernel
 methods. Oncotarget, 8(8):13338, 2017.
 
-**[ 6 ]** Bin Liu, Fule Liu, Xiaolong Wang, Junjie Chen, Longyun Fang, and Kuo-Chen Chou. Pse-in-one: a
+**[6]** Bin Liu, Fule Liu, Xiaolong Wang, Junjie Chen, Longyun Fang, and Kuo-Chen Chou. Pse-in-one: a
 web server for generating various modes of pseudo components of dna, rna, and protein sequences.
 Nucleic acids research, 43(W1):W65–W71, 2015.
 
-**[ 7 ]** Fabian Pedregosa, Gaël Varoquaux, Alexandre Gramfort, Vincent Michel, Bertrand Thirion, Olivier
+**[7]** Fabian Pedregosa, Gaël Varoquaux, Alexandre Gramfort, Vincent Michel, Bertrand Thirion, Olivier
 Grisel, Mathieu Blondel, Peter Prettenhofer, Ron Weiss, Vincent Dubourg, et al. Scikit-learn: Ma-
 chine learning in python. Journal of machine learning research, 12(Oct):2825–2830, 2011.
-
