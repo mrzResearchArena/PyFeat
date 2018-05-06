@@ -1,4 +1,4 @@
-## 1. DNA Datasets: Sigma
+## 1. DNA Datasets: sigma70
 | Classifier | Accuracy (%) |  auROC | auPR   | Sn (%) |  Sp (%)  | F1-Score |  MCC   |
 | :---       | :---:        | :---:  |  :---: | :---:  | :---:    | :---:    | ---:  |
 |LR |92.84|0.9755|0.9789|93.79|91.90|0.9293|0.8583|
