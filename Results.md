@@ -36,15 +36,15 @@ Note: (+) 125 and (-) 119.
 | Classifier |  Sn (%) |
 | :---       | ---:  |
 |LR|81.67|
-|KNN|76.00|
-|Decision Tree|65.00|
+|KNN|72.33|
+|Decision Tree|65.67|
 |Naive Bayes|80.33|
-|Bagging|71.33|
+|Bagging|69.33|
 |Random Forest|71.67|
 |AdaBoost|72.00|
-|Gradient Boosting|79.33|
-|SVM|74.33|
-|LDA|81.33|
+|Gradient Boosting|71.33|
+|SVM|70.33|
+|LDA|51.67|
 
 but, precision = TP / (TP+FP); FP=0; So, precision = 1.0;
 
