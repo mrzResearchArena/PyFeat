@@ -140,7 +140,7 @@ X = {A,C,D,E,F,G,H,I,K,L,M,N,P,Q,R,S,T,V,W,Y} respectively.
 &nbsp;
 
 
-### 3.2. Run Machine Learning Classifiers
+### 3.2. Run Machine Learning Classifiers (Optional)
 ```console
 user@machine:~$ python runClassifiers.py --nFCV=10 --dataset=optimumDataset.csv --auROC=1 --boxPlot=1
 ```
