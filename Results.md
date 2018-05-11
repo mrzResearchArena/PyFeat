@@ -14,6 +14,8 @@
 
 Note: The number of promoter (+ve) sequences and the number of non-promoter (-ve) sequences are 741 and 1400 respectively.
 
+&nbsp;
+
 ## 2. RNA Datasets: (PAI: Predicting adenosine to inosine editing sites by using pseudo nucleotide compositions)
 
 | Classifier | Accuracy (%) |  auROC | auPR   | Sn (%) |  Sp (%)  | F1-Score |  MCC   |
@@ -29,8 +31,10 @@ Note: The number of promoter (+ve) sequences and the number of non-promoter (-ve
 |SVM|83.16|0.9439|0.9549|78.15|88.00|0.8433|0.6703|
 |LDA|59.19|0.5865|0.5849|56.30|61.60|0.6063|0.1896|
 
-Note: (+) 125 and (-) 119.
+Note: The number of (+ve) sequences and the number of (-ve) sequences are 125 and 119 respectively.
 
+
+&nbsp;
 
 ## RNA Datasets: tested on independent dataset (300 +ve instances)
 | Classifier |  Sn (%) |
@@ -46,8 +50,7 @@ Note: (+) 125 and (-) 119.
 |SVM|70.33|
 |LDA|51.67|
 
-Note: (+) 125 and (-) 119.
-
+&nbsp;
 
 ## 3. Protein Datasets: DNA-binding Protein (on PDB1075 dataset)
 | Classifier | Accuracy (%) |  auROC | auPR   | Sn (%) |  Sp (%)  | F1-Score |  MCC   |
@@ -63,8 +66,9 @@ Note: (+) 125 and (-) 119.
 |SVM|89.75|0.9665|0.9714|90.69|88.80|0.8983|0.7967|
 |LDA|87.66|0.9503|0.9563|88.26|87.04|0.8774|0.7541|
 
-Note: (+) 525 and (-) 550.`
+Note: The number of DNA-binding protein (+ve) sequences and the number of non-DNA-binding protein (-ve) sequences are 525 and 550 respectively for PDB1075.
 
+&nbsp;
 
 ### DNA-binding Protein, tested on PDB186 dataset
 | Classifier | Accuracy (%) |  auROC | auPR   | Sn (%) |  Sp (%)  | F1-Score |  MCC   |
@@ -80,5 +84,4 @@ Note: (+) 525 and (-) 550.`
 |SVM|83.33|0.9020|0.8357|71.93|89.36|0.7480|0.6259|
 |LDA|81.74|0.8762|0.7817|71.93|86.93|0.7312|0.5937|
 
-
-
+Note: The number of DNA-binding protein (+ve) sequences and the number of non-DNA-binding protein (-ve) sequences are 93 and  93 respectively for PDB186.
