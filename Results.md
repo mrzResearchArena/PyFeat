@@ -50,6 +50,8 @@ Note: The number of (+ve) sequences and the number of (-ve) sequences are 125 an
 |SVM|70.33|
 |LDA|51.67|
 
+We can [download](http://lin-group.cn/server/AtoI/data) RNA dataset from given link.
+
 &nbsp;
 
 ## 3. Protein Datasets: DNA-binding Protein (on PDB1075 dataset)
@@ -85,3 +87,5 @@ Note: The number of DNA-binding protein (+ve) sequences and the number of non-DN
 |LDA|81.74|0.8762|0.7817|71.93|86.93|0.7312|0.5937|
 
 Note: The number of DNA-binding protein (+ve) sequences and the number of non-DNA-binding protein (-ve) sequences are 93 and  93 respectively for PDB186.
+
+We can [download](http://server.malab.cn/Local-DPP/Datasets.html) DNA-binding protein dataset from given link.
