@@ -33,7 +33,6 @@ Note: The number of promoter (+ve) sequences and the number of non-promoter (-ve
 
 Note: The number of (+ve) sequences and the number of (-ve) sequences are 125 and 119 respectively.
 
-
 &nbsp;
 
 ## RNA Datasets: tested on independent dataset (300 +ve instances)
@@ -50,7 +49,8 @@ Note: The number of (+ve) sequences and the number of (-ve) sequences are 125 an
 |SVM|70.33|
 |LDA|51.67|
 
-We can [download](http://lin-group.cn/server/AtoI/data) RNA dataset from given link.
+&nbsp;
+`We can [download](http://lin-group.cn/server/AtoI/data) RNA dataset from given link.`
 
 &nbsp;
 
@@ -88,4 +88,6 @@ Note: The number of DNA-binding protein (+ve) sequences and the number of non-DN
 
 Note: The number of DNA-binding protein (+ve) sequences and the number of non-DNA-binding protein (-ve) sequences are 93 and  93 respectively for PDB186.
 
-We can [download](http://server.malab.cn/Local-DPP/Datasets.html) DNA-binding protein dataset from given link.
+&nbsp;
+
+`We can [download](http://server.malab.cn/Local-DPP/Datasets.html) DNA-binding protein dataset from given link.`
