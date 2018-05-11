@@ -1,4 +1,4 @@
-## 1. DNA Datasets: sigma70
+## 1. DNA Datasets: Sigma70
 | Classifier | Accuracy (%) |  auROC | auPR   | Sn (%) |  Sp (%)  | F1-Score |  MCC   |
 | :---       | :---:        | :---:  |  :---: | :---:  | :---:    | :---:    | ---:  |
 |LR |92.84|0.9755|0.9789|93.79|91.90|0.9293|0.8583|
@@ -12,7 +12,7 @@
 |SVM|91.50|0.9711|0.9738|92.31|90.69|0.9159|0.8306|
 |LDA|90.29|0.9659|0.9702|91.63|88.93|0.9042|0.8067|
 
-Note: (+) 741 and (-) 1400.`
+Note: The number of promoter (+ve) sequences and the number of non-promoter (-ve) sequences are 741 and 1400 respectively.
 
 ## 2. RNA Datasets: (PAI: Predicting adenosine to inosine editing sites by using pseudo nucleotide compositions)
 
@@ -45,8 +45,6 @@ Note: (+) 125 and (-) 119.
 |Gradient Boosting|71.33|
 |SVM|70.33|
 |LDA|51.67|
-
-but, precision = TP / (TP+FP); FP=0; So, precision = 1.0;
 
 Note: (+) 125 and (-) 119.
 
