@@ -1,5 +1,5 @@
 
-# <center>PyFeat : A Python-based Effective Features Generation Tool from DNA, RNA, and Protein Sequences </center>
+# <center>PyFeat: A Python-based Effective Features Generation Tool from DNA, RNA, and Protein Sequences </center>
 
 ## <center> `Authors:` </center>
 <!-- ### <center> United International University, Dhaka, Bangladesh  </center> -->
@@ -55,23 +55,23 @@ Run command on your console or terminal.
 ### 3.1. Generate Features
 #### 3.1.1. Training Purpose
 ```console
-user@machine:~$ python main.py --sequenceType=DNA --fasta=/home/mrz/FASTAs.txt --label=/home/mrz/Labels.txt --kTuple=5 --kGap=15 --fullDataset=1 --optimumDataset=1 --pseudoKNC=1 --zCurve=1 --gcContent=1 --cumulativeSkew=1 --atgcRatio=1 --monoMono=1 --monoDi=1 --monoTri=1 --diMono=1 --diDi=1 --diTri=1 --triMono=1 --triDi=1
+user@machine:~$ python main.py --sequenceType=DNA --fasta=/home/user/PyFest/Datasets/DNA/FASTA.txt --label=/home/user/PyFest/Datasets/DNA/Label.txt --kTuple=3 --kGap=10 --fullDataset=1 --optimumDataset=1 --pseudoKNC=1 --zCurve=1 --gcContent=1 --cumulativeSkew=1 --atgcRatio=1 --monoMono=1 --monoDi=1 --monoTri=1 --diMono=1 --diDi=1 --diTri=1 --triMono=1 --triDi=1
 ```
 ***`or,`***
 
 ```console
-user@machine:~$ python main.py -seq=DNA -fa=/home/mrz/FASTAs.txt -la=/home/mrz/Labels.txt -ktuple=5 -kgap=15 -full=1 -optimum=1 -pseudo=1 -zcurve=1 -gc=1 -skew=1 -atgc=1 -f11=1 -f12=1 -f13=1 -f21=1 -f22=1 -f23=1 -f31=1 -f32=1
+user@machine:~$ python main.py -seq=DNA -fa=/home/user/PyFest/Datasets/DNA/FASTA.txt -la=/home/user/PyFest/Datasets/DNA/Label.txt -ktuple=3 -kgap=10 -full=1 -optimum=1 -pseudo=1 -zcurve=1 -gc=1 -skew=1 -atgc=1 -f11=1 -f12=1 -f13=1 -f21=1 -f22=1 -f23=1 -f31=1 -f32=1
 ```
 
 #### 3.1.2. Evaluation Purpose
 
 ```console
-user@machine:~$ python main.py --sequenceType=DNA --fasta=/home/mrz/independentFASTAs.txt --label=/home/mrz/independentLabels.txt --kTuple=5 --kGap=15 --testDataset=1 --pseudoKNC=1 --zCurve=1 --gcContent=1 --cumulativeSkew=1 --atgcRatio=1 --monoMono=1 --monoDi=1 --monoTri=1 --diMono=1 --diDi=1 --diTri=1 --triMono=1 --triDi=1
+user@machine:~$ python main.py --sequenceType=Protein --fasta=/home/user/PyFest/Datasets/Protein/independentFASTA.txt --label=/home/user/PyFest/Datasets/Protein/independentLabel.txt --kTuple=3 --kGap=10 --testDataset=1 --pseudoKNC=1 --zCurve=1 --gcContent=1 --cumulativeSkew=1 --atgcRatio=1 --monoMono=1 --monoDi=1 --monoTri=1 --diMono=1 --diDi=1 --diTri=1 --triMono=1 --triDi=1
 ```
 ***`or,`***
 
 ```console
-user@machine:~$ python main.py -seq=DNA -fa=/home/mrz/independentFASTAs.txt -la=/home/mrz/independentLabels.txt -ktuple=5 -kgap=15 -test -pseudo=1 -zcurve=1 -gc=1 -skew=1 -atgc=1 -f11=1 -f12=1 -f13=1 -f21=1 -f22=1 -f23=1 -f31=1 -f32=1
+user@machine:~$ python main.py -seq=Protein -fa=/home/user/PyFest/Datasets/Protein/independentFASTA.txt -la=/home/user/PyFest/Datasets/Protein/independentLabel.txt -ktuple=3 -kgap=10 -test -pseudo=1 -zcurve=1 -gc=1 -skew=1 -atgc=1 -f11=1 -f12=1 -f13=1 -f21=1 -f22=1 -f23=1 -f31=1 -f32=1
 ```
 
 
@@ -87,11 +87,11 @@ user@machine:~$ python main.py -seq=DNA -fa=/home/mrz/independentFASTAs.txt -la=
 #### Table 1: Arguments Details for the Features Generation
 |   Argument     |   Optional   |     Type     |   Default | Help   |
 |     :---       |    :---:     |  :---:       |  :---:    | ---:|
-| --sequenceType | -seq | string | --sequenceType=DNA | DNA, RNA, and Protein (prot); Case is not sensitive. |
-| --fasta | -fa  | string |  | Enter a UNIX-like path; Example: /home/User/FASTA.txt |
-| --label | -la  | string |  | Enter a UNIX-like path; Example: /home/User/Label.txt |
-| --kGap | -kgap  | integer | --kGap=10  | Maximum number of gapped; Example: -kGap=15  |
-| --kTuple | -ktuple  | integer | --kTuple=3  | Maximum number of nucleotides; Example: -kTuple=5 |
+| --sequenceType | -seq | string | --sequenceType=DNA | We can use DNA, RNA, and protein or prot as option; Case is not sensitive. |
+| --fasta | -fa  | string |  | Enter a UNIX-like path; Example: /home/user/FASTA.txt |
+| --label | -la  | string |  | Enter a UNIX-like path; Example: /home/user/Label.txt |
+| --kGap | -kgap  | integer | --kGap=10  | Maximum number of gapped; Example: -kGap=10  |
+| --kTuple | -ktuple  | integer | --kTuple=3  | Maximum number of nucleotides; Example: -kTuple=3 |
 | --fullDataset | -full  | integer |  --fullDataset=0  | Set --fullDataset=1, if we don want to save full dataset. |
 | --testDataset | -test  | integer |  --testDataset=0  | Set --testDataset=1, if we don want to save test dataset. |
 | --optimumDataset | -optimum  | integer |  --optimumDataset=0  | Set --optimumDataset=1, if we don want to save optimum dataset. |
@@ -232,3 +232,23 @@ Nucleic acids research, 43(W1):W65–W71, 2015.
 **[7]** Fabian Pedregosa, Gaël Varoquaux, Alexandre Gramfort, Vincent Michel, Bertrand Thirion, Olivier
 Grisel, Mathieu Blondel, Peter Prettenhofer, Ron Weiss, Vincent Dubourg, et al. Scikit-learn: Ma-
 chine learning in python. Journal of machine learning research, 12(Oct):2825–2830, 2011.
+
+<!-- ### 4. Code Description :
+- **Features Generation :**
+  ```console
+  user@machine:~$ python main.py <arguments>
+  ```
+  Note : It will provide datasets named **fullDataset.csv** and **optimumDataset.csv** from FASTA sequences and class label.
+
+
+- **Run Machine Learning Classifiers :**
+  ``` console
+  user@machine:~$ python runClassifiers.py <arguments>
+  ```
+  Or, if we want to write results in a **.TXT** file then type:
+
+  
+ -->
+  
+
+
