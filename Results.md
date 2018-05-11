@@ -16,6 +16,8 @@ Note: The number of promoter (+ve) sequences and the number of non-promoter (-ve
 
 &nbsp;
 
+We can [download](http://lin-group.cn/server/iPro70PseZNC/data.html) DNA dataset from given link.
+
 ## 2. RNA Datasets: (PAI: Predicting adenosine to inosine editing sites by using pseudo nucleotide compositions)
 
 | Classifier | Accuracy (%) |  auROC | auPR   | Sn (%) |  Sp (%)  | F1-Score |  MCC   |
