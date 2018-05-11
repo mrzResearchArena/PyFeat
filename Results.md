@@ -51,7 +51,7 @@ Note: The number of (+ve) sequences and the number of (-ve) sequences are 125 an
 
 &nbsp;
 
-`We can [download](http://lin-group.cn/server/AtoI/data) RNA dataset from given link.`
+We can [download](http://lin-group.cn/server/AtoI/data) RNA dataset from given link.
 
 &nbsp;
 
@@ -91,4 +91,4 @@ Note: The number of DNA-binding protein (+ve) sequences and the number of non-DN
 
 &nbsp;
 
-`We can [download](http://server.malab.cn/Local-DPP/Datasets.html) DNA-binding protein dataset from given link.`
+We can [download](http://server.malab.cn/Local-DPP/Datasets.html) DNA-binding protein dataset from given link.
