@@ -55,7 +55,7 @@ Run command on your console or terminal.
 ### 3.1. Generate Features
 #### 3.1.1. Training Purpose
 ```console
-user@machine:~$ python main.py --sequenceType=DNA --fasta=/home/user/PyFest/Datasets/DNA/FASTA.txt --label=/home/user/PyFest/Datasets/DNA/Label.txt --kTuple=3 --kGap=10 --fullDataset=1 --optimumDataset=1 --pseudoKNC=1 --zCurve=1 --gcContent=1 --cumulativeSkew=1 --atgcRatio=1 --monoMono=1 --monoDi=1 --monoTri=1 --diMono=1 --diDi=1 --diTri=1 --triMono=1 --triDi=1
+user@machine:~$ python main.py --sequenceType=DNA --fasta=/home/user/PyFest/Datasets/DNA/FASTA.txt --label=/home/user/PyFest/Datasets/DNA/Labels.txt --kTuple=3 --kGap=10 --fullDataset=1 --optimumDataset=1 --pseudoKNC=1 --zCurve=1 --gcContent=1 --cumulativeSkew=1 --atgcRatio=1 --monoMono=1 --monoDi=1 --monoTri=1 --diMono=1 --diDi=1 --diTri=1 --triMono=1 --triDi=1
 ```
 ***`or,`***
 
@@ -232,23 +232,3 @@ Nucleic acids research, 43(W1):W65–W71, 2015.
 **[7]** Fabian Pedregosa, Gaël Varoquaux, Alexandre Gramfort, Vincent Michel, Bertrand Thirion, Olivier
 Grisel, Mathieu Blondel, Peter Prettenhofer, Ron Weiss, Vincent Dubourg, et al. Scikit-learn: Ma-
 chine learning in python. Journal of machine learning research, 12(Oct):2825–2830, 2011.
-
-<!-- ### 4. Code Description :
-- **Features Generation :**
-  ```console
-  user@machine:~$ python main.py <arguments>
-  ```
-  Note : It will provide datasets named **fullDataset.csv** and **optimumDataset.csv** from FASTA sequences and class label.
-
-
-- **Run Machine Learning Classifiers :**
-  ``` console
-  user@machine:~$ python runClassifiers.py <arguments>
-  ```
-  Or, if we want to write results in a **.TXT** file then type:
-
-  
- -->
-  
-
-
