@@ -11,9 +11,9 @@ def readFASTAs(fileName):
             if line[0] != '>':
                 genome += line.strip()
             else:
-                v.append(genome)
+                v.append(genome.upper())
                 genome = ''
-        v.append(genome)
+        v.append(genome.upper())
         del v[0]
         return v
 
