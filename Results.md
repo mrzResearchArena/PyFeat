@@ -43,7 +43,7 @@ Note: The number of (+ve) sequences and the number of (-ve) sequences are 125 an
 ## RNA Datasets: tested on independent dataset (300 +ve instances)
 | Classifier |  Sn (%) |
 | :---       | ---:  |
-|LR|81.67|
+|LR|84.67|
 |KNN|72.33|
 |Decision Tree|65.67|
 |Naive Bayes|80.33|
@@ -51,8 +51,10 @@ Note: The number of (+ve) sequences and the number of (-ve) sequences are 125 an
 |Random Forest|71.67|
 |AdaBoost|72.00|
 |Gradient Boosting|71.33|
-|SVM|70.33|
+|SVM|81.33|
 |LDA|51.67|
+
+`LR is able to classify 254 instance of 300.`
 
 &nbsp;
 
