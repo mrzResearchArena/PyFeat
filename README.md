@@ -89,7 +89,7 @@ user@machine:~$ python main.py -seq=Protein -test=1 -fa=/home/user/PyFest/Datase
 | --sequenceType | -seq | string | --sequenceType=DNA | We can use DNA, RNA, and protein or prot as option; Case is not sensitive. |
 | --fasta | -fa  | string |  | Enter a UNIX-like path; Example: /home/user/FASTA.txt |
 | --label | -la  | string |  | Enter a UNIX-like path; Example: /home/user/Label.txt |
-| --kGap | -kgap  | integer | --kGap=10  | Maximum number of gapped; Example: -kGap=10  |
+| --kGap | -kgap  | integer | --kGap=5  | Maximum number of gapped; Example: -kGap=5  |
 | --kTuple | -ktuple  | integer | --kTuple=3  | Maximum number of nucleotides; Example: -kTuple=3 |
 | --fullDataset | -full  | integer |  --fullDataset=0  | Set --fullDataset=1, if we don't want to save full dataset. |
 | --testDataset | -test  | integer |  --testDataset=0  | Set --testDataset=1, if we don't want to save test dataset. |
