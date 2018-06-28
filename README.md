@@ -54,23 +54,23 @@ Run command on your console or terminal.
 ### 3.1. Generate Features
 #### 3.1.1. Training Purpose
 ```console
-user@machine:~$ python main.py --sequenceType=DNA --fullDataset=1 --optimumDataset=1 --fasta=/home/user/PyFest/Datasets/DNA/FASTA.txt --label=/home/user/PyFest/Datasets/DNA/Labels.txt --kTuple=3 --kGap=10 --pseudoKNC=1 --zCurve=1 --gcContent=1 --cumulativeSkew=1 --atgcRatio=1 --monoMono=1 --monoDi=1 --monoTri=1 --diMono=1 --diDi=1 --diTri=1 --triMono=1 --triDi=1
+user@machine:~$ python main.py --sequenceType=DNA --fullDataset=1 --optimumDataset=1 --fasta=/home/user/PyFest/Datasets/DNA/FASTA.txt --label=/home/user/PyFest/Datasets/DNA/Labels.txt --kTuple=3 --kGap=5 --pseudoKNC=1 --zCurve=1 --gcContent=1 --cumulativeSkew=1 --atgcRatio=1 --monoMono=1 --monoDi=1 --monoTri=1 --diMono=1 --diDi=1 --diTri=1 --triMono=1 --triDi=1
 ```
 ***`or,`***
 
 ```console
-user@machine:~$ python main.py -seq=DNA -full=1 -optimum=1 -fa=/home/user/PyFest/Datasets/DNA/FASTA.txt -la=/home/user/PyFest/Datasets/DNA/Label.txt -ktuple=3 -kgap=10 -pseudo=1 -zcurve=1 -gc=1 -skew=1 -atgc=1 -f11=1 -f12=1 -f13=1 -f21=1 -f22=1 -f23=1 -f31=1 -f32=1
+user@machine:~$ python main.py -seq=DNA -full=1 -optimum=1 -fa=/home/user/PyFest/Datasets/DNA/FASTA.txt -la=/home/user/PyFest/Datasets/DNA/Label.txt -ktuple=3 -kgap=5 -pseudo=1 -zcurve=1 -gc=1 -skew=1 -atgc=1 -f11=1 -f12=1 -f13=1 -f21=1 -f22=1 -f23=1 -f31=1 -f32=1
 ```
 
 #### 3.1.2. Evaluation Purpose
 
 ```console
-user@machine:~$ python main.py --sequenceType=Protein --testDataset=1 --fasta=/home/user/PyFest/Datasets/Protein/independentFASTA.txt --label=/home/user/PyFest/Datasets/Protein/independentLabel.txt --kTuple=3 --kGap=10 --pseudoKNC=1 --zCurve=1 --gcContent=1 --cumulativeSkew=1 --atgcRatio=1 --monoMono=1 --monoDi=1 --monoTri=1 --diMono=1 --diDi=1 --diTri=1 --triMono=1 --triDi=1
+user@machine:~$ python main.py --sequenceType=Protein --testDataset=1 --fasta=/home/user/PyFest/Datasets/Protein/independentFASTA.txt --label=/home/user/PyFest/Datasets/Protein/independentLabel.txt --kTuple=3 --kGap=5 --pseudoKNC=1 --zCurve=1 --gcContent=1 --cumulativeSkew=1 --atgcRatio=1 --monoMono=1 --monoDi=1 --monoTri=1 --diMono=1 --diDi=1 --diTri=1 --triMono=1 --triDi=1
 ```
 ***`or,`***
 
 ```console
-user@machine:~$ python main.py -seq=Protein -test=1 -fa=/home/user/PyFest/Datasets/Protein/independentFASTA.txt -la=/home/user/PyFest/Datasets/Protein/independentLabel.txt -ktuple=3 -kgap=10 -pseudo=1 -zcurve=1 -gc=1 -skew=1 -atgc=1 -f11=1 -f12=1 -f13=1 -f21=1 -f22=1 -f23=1 -f31=1 -f32=1
+user@machine:~$ python main.py -seq=Protein -test=1 -fa=/home/user/PyFest/Datasets/Protein/independentFASTA.txt -la=/home/user/PyFest/Datasets/Protein/independentLabel.txt -ktuple=3 -kgap=5 -pseudo=1 -zcurve=1 -gc=1 -skew=1 -atgc=1 -f11=1 -f12=1 -f13=1 -f21=1 -f22=1 -f23=1 -f31=1 -f32=1
 ```
 
 
