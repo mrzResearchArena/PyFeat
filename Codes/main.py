@@ -81,7 +81,7 @@ if __name__ == '__main__':
     p.add_argument('-fa', '--fasta', type=str, help='~/FASTA.txt')
     p.add_argument('-la', '--label', type=str, help='~/Labels.txt')
 
-    p.add_argument('-kgap', '--kGap', type=int, help='(l,k,p)-mers', default=10)
+    p.add_argument('-kgap', '--kGap', type=int, help='(l,k,p)-mers', default=5)
     p.add_argument('-ktuple', '--kTuple', type=int, help='k=1 then (X), k=2 then (XX), k=3 then (XXX),', default=3)
 
     p.add_argument('-full', '--fullDataset', type=int, help='saved full dataset', default=0, choices=[0, 1])
