@@ -8,12 +8,11 @@
 
 ## 1. Download Package
 ### 1.1. Direct Download
-We can directly [download](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/mrzResearchArena/PyFeat)  by clicking the link.
+We can directly [download](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/mrzResearchArena/PyFeat) by clicking the link.
 
 **Note:** The package will download in zip format `(.zip)` named `PyFeat-master.zip`.
 
 ***`or,`***
-
 
 ### 1.2. Clone a GitHub Repository (Optional)
 
@@ -28,10 +27,10 @@ Cloning a repository syncs it to our local machine. After clone, we can add and 
 ### 2.1. Required Python Packages
 `Major (Generate Features):`
 - Install: python (version >= 3.5)
-- Install: numpy (version >= 1.13.1)
+- Install: numpy (version >= 1.13.0)
 
 `Minor (Performance Measures):`
-- Install: sklearn (version >= 0.19.1)
+- Install: sklearn (version >= 0.19.0)
 - Install: pandas (version >= 0.21.0)
 - Install: matplotlib (version >= 2.1.0)
 
@@ -55,23 +54,23 @@ Run command on your console or terminal.
 ### 3.1. Generate Features
 #### 3.1.1. Training Purpose
 ```console
-user@machine:~$ python main.py --sequenceType=DNA --fasta=/home/user/PyFest/Datasets/DNA/FASTA.txt --label=/home/user/PyFest/Datasets/DNA/Labels.txt --kTuple=3 --kGap=10 --fullDataset=1 --optimumDataset=1 --pseudoKNC=1 --zCurve=1 --gcContent=1 --cumulativeSkew=1 --atgcRatio=1 --monoMono=1 --monoDi=1 --monoTri=1 --diMono=1 --diDi=1 --diTri=1 --triMono=1 --triDi=1
+user@machine:~$ python main.py --sequenceType=DNA --fullDataset=1 --optimumDataset=1 --fasta=/home/user/PyFest/Datasets/DNA/FASTA.txt --label=/home/user/PyFest/Datasets/DNA/Labels.txt --kTuple=3 --kGap=10 --pseudoKNC=1 --zCurve=1 --gcContent=1 --cumulativeSkew=1 --atgcRatio=1 --monoMono=1 --monoDi=1 --monoTri=1 --diMono=1 --diDi=1 --diTri=1 --triMono=1 --triDi=1
 ```
 ***`or,`***
 
 ```console
-user@machine:~$ python main.py -seq=DNA -fa=/home/user/PyFest/Datasets/DNA/FASTA.txt -la=/home/user/PyFest/Datasets/DNA/Label.txt -ktuple=3 -kgap=10 -full=1 -optimum=1 -pseudo=1 -zcurve=1 -gc=1 -skew=1 -atgc=1 -f11=1 -f12=1 -f13=1 -f21=1 -f22=1 -f23=1 -f31=1 -f32=1
+user@machine:~$ python main.py -seq=DNA -full=1 -optimum=1 -fa=/home/user/PyFest/Datasets/DNA/FASTA.txt -la=/home/user/PyFest/Datasets/DNA/Label.txt -ktuple=3 -kgap=10 -pseudo=1 -zcurve=1 -gc=1 -skew=1 -atgc=1 -f11=1 -f12=1 -f13=1 -f21=1 -f22=1 -f23=1 -f31=1 -f32=1
 ```
 
 #### 3.1.2. Evaluation Purpose
 
 ```console
-user@machine:~$ python main.py --sequenceType=Protein --fasta=/home/user/PyFest/Datasets/Protein/independentFASTA.txt --label=/home/user/PyFest/Datasets/Protein/independentLabel.txt --kTuple=3 --kGap=10 --testDataset=1 --pseudoKNC=1 --zCurve=1 --gcContent=1 --cumulativeSkew=1 --atgcRatio=1 --monoMono=1 --monoDi=1 --monoTri=1 --diMono=1 --diDi=1 --diTri=1 --triMono=1 --triDi=1
+user@machine:~$ python main.py --sequenceType=Protein --testDataset=1 --fasta=/home/user/PyFest/Datasets/Protein/independentFASTA.txt --label=/home/user/PyFest/Datasets/Protein/independentLabel.txt --kTuple=3 --kGap=10 --pseudoKNC=1 --zCurve=1 --gcContent=1 --cumulativeSkew=1 --atgcRatio=1 --monoMono=1 --monoDi=1 --monoTri=1 --diMono=1 --diDi=1 --diTri=1 --triMono=1 --triDi=1
 ```
 ***`or,`***
 
 ```console
-user@machine:~$ python main.py -seq=Protein -fa=/home/user/PyFest/Datasets/Protein/independentFASTA.txt -la=/home/user/PyFest/Datasets/Protein/independentLabel.txt -ktuple=3 -kgap=10 -test -pseudo=1 -zcurve=1 -gc=1 -skew=1 -atgc=1 -f11=1 -f12=1 -f13=1 -f21=1 -f22=1 -f23=1 -f31=1 -f32=1
+user@machine:~$ python main.py -seq=Protein -test=1 -fa=/home/user/PyFest/Datasets/Protein/independentFASTA.txt -la=/home/user/PyFest/Datasets/Protein/independentLabel.txt -ktuple=3 -kgap=10 -pseudo=1 -zcurve=1 -gc=1 -skew=1 -atgc=1 -f11=1 -f12=1 -f13=1 -f21=1 -f22=1 -f23=1 -f31=1 -f32=1
 ```
 
 
@@ -85,16 +84,16 @@ user@machine:~$ python main.py -seq=Protein -fa=/home/user/PyFest/Datasets/Prote
 &nbsp;
 
 #### Table 1: Arguments Details for the Features Generation
-|   Argument     |   Optional   |     Type     |   Default | Help   |
+|   Argument     |   Corresponding Optional Argument |     Type     |   Default | Help   |
 |     :---       |    :---:     |  :---:       |  :---:    | ---:|
 | --sequenceType | -seq | string | --sequenceType=DNA | We can use DNA, RNA, and protein or prot as option; Case is not sensitive. |
 | --fasta | -fa  | string |  | Enter a UNIX-like path; Example: /home/user/FASTA.txt |
 | --label | -la  | string |  | Enter a UNIX-like path; Example: /home/user/Label.txt |
 | --kGap | -kgap  | integer | --kGap=10  | Maximum number of gapped; Example: -kGap=10  |
 | --kTuple | -ktuple  | integer | --kTuple=3  | Maximum number of nucleotides; Example: -kTuple=3 |
-| --fullDataset | -full  | integer |  --fullDataset=0  | Set --fullDataset=1, if we don want to save full dataset. |
-| --testDataset | -test  | integer |  --testDataset=0  | Set --testDataset=1, if we don want to save test dataset. |
-| --optimumDataset | -optimum  | integer |  --optimumDataset=0  | Set --optimumDataset=1, if we don want to save optimum dataset. |
+| --fullDataset | -full  | integer |  --fullDataset=0  | Set --fullDataset=1, if we don't want to save full dataset. |
+| --testDataset | -test  | integer |  --testDataset=0  | Set --testDataset=1, if we don't want to save test dataset. |
+| --optimumDataset | -optimum  | integer |  --optimumDataset=0  | Set --optimumDataset=1, if we don't want to save optimum dataset. |
 | --pseudoKNC | -pseudo  | integer |  --pseudoKNC=0  | Set --pseudoKNC=1, if we want to generate features. |
 | --zCurve | -zcurve  | integer |  --zCurve=0  | Set --zCurve=1, if we want to generate features. |
 | --gcContent | -gc  | integer |  --gcContent=0  | Set --gcContent=1, if we want to generate features. |
@@ -153,7 +152,7 @@ user@machine:~$ python runClassifiers.py --nFCV=10 --dataset=optimumDataset.csv 
 &nbsp;
 
 #### Table 3: Arguments Details for the Machine Learning Classifiers
-|   Argument     |   Optional   |     Type     |   Default | Help   |
+|   Argument     |   Corresponding Optional Argument  |     Type     |   Default | Help   |
 |     :---       |    :---:     |  :---:       |  :---:    | ---:|
 | --nFCV | -cv | integer | --nFCV=10 | How many numbers of cross-validation? |
 | --dataset | -data  | string | --dataset=optimumDataset.csv | Enter a UNIX-like path for a .csv file; Example: /home/User/dataset.csv |
@@ -172,7 +171,7 @@ user@machine:~$ python trainModel.py --dataset=optimumDataset.csv --model=LR
 &nbsp;
 
 #### Table 4: Arguments Details for Training Model
-|   Argument     |   Optional   |     Type     |   Default | Help   |
+|   Argument     |   Corresponding Optional Argument   |     Type     |   Default | Help   |
 |     :---       |    :---:     |  :---:       |  :---:    | ---:|
 | --dataset | -data  | string | --dataset=optimumDataset.csv | Enter a UNIX-like path for a .csv file; Example: /home/User/dataset.csv |
 |--model|-m|string|--model=LR|We can use LR, SVM, KNN, DT, SVM, NB, Bagging, RF, AB, GB, and LDA as an option; All options are case sensitive.|
@@ -195,7 +194,7 @@ user@machine:~$ python evaluateModel.py --optimumDatasetPath=optimumDataset.csv 
 &nbsp;
 
 #### Table 5: Arguments Details for Evaluation Model
-|   Argument     |   Optional   |     Type     |   Default | Help   |
+|   Argument     | Corresponding Optional Argument   |     Type     |   Default | Help   |
 |     :---       |    :---:     |  :---:       |  :---:    | ---:|
 | --optimumDatasetPath | -optimumPath  | string | --optimumDatasetPath=optimumDataset.csv | Enter a UNIX-like path for a .csv file; Example: /home/User/dataset.csv |
 | --testDatasetPath | -testPath  | string | --testDatasetPath=testDataset.csv | Enter a UNIX-like path for a .csv file; Example: /home/User/dataset.csv |
