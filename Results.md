@@ -83,7 +83,8 @@ Note: The number of DNA-binding protein (+ve) sequences and the number of non-DN
 ### DNA-binding Protein, tested on PDB186 dataset
 | Classifier | Accuracy (%) |  auROC | auPR   | Sn (%) |  Sp (%)  | F1-Score |  MCC   |
 | :---       | :---:        | :---:  |  :---: | :---:  | :---:    | :---:    | :---:  |
-|LR| 81.18 |0.8784|0.7921|70.58|86.57|0.7205|0.5783|
+
+|LR|83.33|0.9020|0.8357|71.93|89.36|0.7480|0.6259|
 |KNN| 77.42 |0.8270|0.6715|68.29|81.79|0.6734|0.4990|
 |Decision Tree |70.43|0.6722|0.4768|56.95|77.50|0.5706|0.3457|
 |Naive Bayes |74.73|0.8208|0.6438|73.95|76.29|0.6769|0.4874|
@@ -91,7 +92,7 @@ Note: The number of DNA-binding protein (+ve) sequences and the number of non-DN
 |Random Forest|75.27|0.8120|0.6699|49.80|88.36|0.5788|0.4211|
 |AdaBoost|76.34|0.8294|0.7134|63.43|83.14|0.6496|0.4742|
 |Gradient Boosting|78.49|0.8661|0.7706|67.21|86.71|0.6987|0.5519|
-|SVM|83.33|0.9020|0.8357|71.93|89.36|0.7480|0.6259|
+|SVM| 81.18 |0.8784|0.7921|70.58|86.57|0.7205|0.5783|
 |LDA|79.57|0.8762|0.7817|71.93|86.93|0.7312|0.5937|
 
 Note: The number of DNA-binding protein (+ve) sequences and the number of non-DNA-binding protein (-ve) sequences are 93 and  93 respectively for PDB186.
