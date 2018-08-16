@@ -83,7 +83,6 @@ Note: The number of DNA-binding protein (+ve) sequences and the number of non-DN
 ### DNA-binding Protein, tested on PDB186 dataset
 | Classifier | Accuracy (%) |  auROC | auPR   | Sn (%) |  Sp (%)  | F1-Score |  MCC   |
 | :---       | :---:        | :---:  |  :---: | :---:  | :---:    | :---:    | :---:  |
-
 |LR|83.33|0.9020|0.8357|71.93|89.36|0.7480|0.6259|
 |KNN| 77.42 |0.8270|0.6715|68.29|81.79|0.6734|0.4990|
 |Decision Tree |70.43|0.6722|0.4768|56.95|77.50|0.5706|0.3457|
