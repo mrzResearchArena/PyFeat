@@ -21,6 +21,7 @@ Cloning a repository syncs it to our local machine (Example for Linux-based OS).
 - Clone over SSH: `user@machine:~$ git clone git@github.com:mrzResearchArena/PyFeat.git `
 
 **Note:** If the clone was successful, a new sub-directory appears on our local drive. This directory has the same name (PyFeat) as the `GitHub` repository that we cloned.
+
 **Note:** We can run any Linux-based command from any valid location or path, but by default, a command generally runs from `/home/user`. (`user` is the name of our computer but your computer name can be `XYZ`.)
 
 ## 2. Installation Process
