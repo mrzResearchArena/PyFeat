@@ -29,15 +29,15 @@ from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 Names = ['LR', 'KNN', 'DT', 'NB', 'Bagging', 'RF', 'AB', 'GB', 'SVM', 'LDA', 'ET']
 
 Classifiers = [
-    LogisticRegression(),           #1
-    KNeighborsClassifier(),         #2
+    LogisticRegression(penalty='l2', C=0.10, max_iter=500, solver='sag'),           #1
+    KNeighborsClassifier(n_neighbors=7),         #2
     DecisionTreeClassifier(),       #3
     GaussianNB(),                   #4
     BaggingClassifier(),            #5
     RandomForestClassifier(),       #6
     AdaBoostClassifier(),           #7
     GradientBoostingClassifier(),   #8
-    SVC(probability=True),          #9
+    SVC(C=1.0, kernel='rbf', degree=3, probability=True),          #9
     LinearDiscriminantAnalysis(),   #10
     # ExtraTreesClassifier(),         #11
 ]
