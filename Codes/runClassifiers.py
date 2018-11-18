@@ -37,7 +37,7 @@ Classifiers = [
     RandomForestClassifier(),       #6
     AdaBoostClassifier(),           #7
     GradientBoostingClassifier(),   #8
-    SVC(C=1.0, kernel='rbf', degree=3, probability=True),          #9
+    SVC(C=15.0, kernel='rbf', degree=3, probability=True),          #9
     LinearDiscriminantAnalysis(),   #10
     # ExtraTreesClassifier(),         #11
 ]
