@@ -116,7 +116,7 @@ user@machine:~$ python main.py -seq=Protein -test=1 -fa=/home/user/PyFeat/Datase
 &nbsp;
 &nbsp;
 
-#### Table 2: Features Description
+#### Table 2: Feature Description
 | Feature Name | Feature Structure / Formula | Number of Features | Applicable |
 | :---         |        :---:      |         :---:      |    ---:    |
 |zCurve| x_axis = (A+G)-(C+T); y_axis = (A+C)-(G+T); z_axis = (A+T)-(G+C) | 3 features for DNA/RNA | DNA, RNA |
