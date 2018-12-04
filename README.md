@@ -136,6 +136,7 @@ user@machine:~$ python main.py -seq=Protein -test=1 -fa=/home/user/PyFeat/Datase
 **Note:** When sequence becomes DNA, RNA, and Protein then X = {A,C,G,T}, X = {A,C,G,U}, and
 X = {A,C,D,E,F,G,H,I,K,L,M,N,P,Q,R,S,T,V,W,Y} respectively.
 
+Arguments Details for the `Features Generation` and `Feature Description` are provided in Tables 1 and Table 2, respectively.
 
 &nbsp;
 &nbsp;
