@@ -210,67 +210,67 @@ user@machine:~$ python evaluateModel.py --optimumDatasetPath=optimumDataset.csv 
 
 ## References
 
-[1] Bin Liu, Fule Liu, Longyun Fang, Xiaolong Wang, and Kuo-Chen Chou. repdna: a
+**[1]** Bin Liu, Fule Liu, Longyun Fang, Xiaolong Wang, and Kuo-Chen Chou. repdna: a
 python package to generate various modes of feature vectors for dna sequences by in-
 corporating user-defined physicochemical properties and sequence-order effects. Bioin-
 formatics, 31(8):1307–1309, 2014.
 
-[2] Dong-Sheng Cao, Qing-Song Xu, and Yi-Zeng Liang. propy: a tool to generate various
+**[2]** Dong-Sheng Cao, Qing-Song Xu, and Yi-Zeng Liang. propy: a tool to generate various
 modes of chous pseaac. Bioinformatics, 29(7):960–962, 2013.
 
-[3] Zhen Chen, Pei Zhao, Fuyi Li, André Leier, Tatiana T Marquez-Lago, Yanan Wang,
+**[3]** Zhen Chen, Pei Zhao, Fuyi Li, André Leier, Tatiana T Marquez-Lago, Yanan Wang,
 Geoffrey I Webb, A Ian Smith, Roger J Daly, Kuo-Chen Chou, et al. ifeature: a python
 package and web server for features extraction and selection from protein and peptide
 sequences. Bioinformatics, 1:4, 2018.
 
-[4] Md Rafsan Jani, Md Toha Khan Mozlish, Sajid Ahmed, Dewan Md Farid, and Swakkhar
+**[4]** Md Rafsan Jani, Md Toha Khan Mozlish, Sajid Ahmed, Dewan Md Farid, and Swakkhar
 Shatabda. irecspot-ef: Effective sequence based features for recombination hotspot
 prediction. Computers in biology and medicine, 2018.
 
-[5] Bin Liu, Fule Liu, Longyun Fang, Xiaolong Wang, and Kuo-Chen Chou. reprna: a web
+**[5]** Bin Liu, Fule Liu, Longyun Fang, Xiaolong Wang, and Kuo-Chen Chou. reprna: a web
 server for generating various feature vectors of rna sequences. Molecular Genetics and
 Genomics, 291(1):473–481, 2016.
 
-[6] Nan Xiao, Dong-Sheng Cao, Min-Feng Zhu, and Qing-Song Xu. protr/protrweb: R
+**[6]** Nan Xiao, Dong-Sheng Cao, Min-Feng Zhu, and Qing-Song Xu. protr/protrweb: R
 package and web server for generating various numerical representation schemes of pro-
 tein sequences. Bioinformatics, 31(11):1857–1859, 2015.
 
-[7] Bin Liu. Bioseq-analysis: a platform for dna, rna and protein sequence analysis based
+**[7]** Bin Liu. Bioseq-analysis: a platform for dna, rna and protein sequence analysis based
 on machine learning approaches. Briefings in bioinformatics, 2017.
 
-[8] Bin Liu, Hao Wu, Deyuan Zhang, Xiaolong Wang, and Kuo-Chen Chou. Pse-analysis:
+**[8]** Bin Liu, Hao Wu, Deyuan Zhang, Xiaolong Wang, and Kuo-Chen Chou. Pse-analysis:
 a python package for dna/rna and protein/peptide sequence analysis based on pseudo
 components and kernel methods. Oncotarget, 8(8):13338, 2017.
 
-[9] Bin Liu, Fule Liu, Xiaolong Wang, Junjie Chen, Longyun Fang, and Kuo-Chen Chou.
+**[9]** Bin Liu, Fule Liu, Xiaolong Wang, Junjie Chen, Longyun Fang, and Kuo-Chen Chou.
 Pse-in-one: a web server for generating various modes of pseudo components of dna,
 rna, and protein sequences. Nucleic acids research, 43(W1):W65–W71, 2015.
 
-[10] Fabian Pedregosa, Gaël Varoquaux, Alexandre Gramfort, Vincent Michel, Bertrand Thirion, Olivier
+**[10]** Fabian Pedregosa, Gaël Varoquaux, Alexandre Gramfort, Vincent Michel, Bertrand Thirion, Olivier
 Grisel, Mathieu Blondel, Peter Prettenhofer, Ron Weiss, Vincent Dubourg, et al. Scikit-learn: Machine
 learning in python. Journal of machine learning research, 12(Oct):2825–2830, 2011.
 
-[11] Eamonn Keogh and Abdullah Mueen. Curse of dimensionality. In Encyclopedia of
+**[11]** Eamonn Keogh and Abdullah Mueen. Curse of dimensionality. In Encyclopedia of
 Machine Learning and Data Mining, pages 314–315. Springer, 2017.
 
-[12] Ruihu Wang. Adaboost for feature selection, classification and its relation with svm, a
+**[12]** Ruihu Wang. Adaboost for feature selection, classification and its relation with svm, a
 review. Physics Procedia, 25:800–807, 2012.
 
-[13] Hao Lin, En-Ze Deng, Hui Ding, Wei Chen, and Kuo-Chen Chou. ipro54-pseknc: a
+**[13]** Hao Lin, En-Ze Deng, Hui Ding, Wei Chen, and Kuo-Chen Chou. ipro54-pseknc: a
 sequence-based predictor for identifying sigma-54 promoters in prokaryote with pseudo
 k-tuple nucleotide composition. Nucleic acids research, 42(21):12961–12972, 2014.
 
-[14] Wei Chen, Pengmian Feng, Hui Ding, and Hao Lin. Pai: Predicting adenosine to inosine
+**[14]** Wei Chen, Pengmian Feng, Hui Ding, and Hao Lin. Pai: Predicting adenosine to inosine
 editing sites by using pseudo nucleotide compositions. Scientific reports, 6:35123, 2016.
 
-[15] Hao Lin, Zhi-Yong Liang, Hua Tang, and Wei Chen. Identifying sigma70 promoters
+**[15]** Hao Lin, Zhi-Yong Liang, Hua Tang, and Wei Chen. Identifying sigma70 promoters
 with novel pseudo nucleotide composition. IEEE/ACM transactions on computational
 biology and bioinformatics, 2017.
 
-[16] Mahmoud Ghandi, Dongwon Lee, Morteza Mohammad-Noori, and Michael A Beer.
+**[16]** Mahmoud Ghandi, Dongwon Lee, Morteza Mohammad-Noori, and Michael A Beer.
 Enhanced regulatory sequence prediction using gapped k-mer features. PLoS computa-
 tional biology, 10(7):e1003711, 2014.
 
-[17] Shahana Yasmin Chowdhury, Swakkhar Shatabda, and Abdollah Dehzangi. Idnaprot-
+**[17]** Shahana Yasmin Chowdhury, Swakkhar Shatabda, and Abdollah Dehzangi. Idnaprot-
 es: Identification of dna-binding proteins using evolutionary and structural features.
 Scientific Reports, 7(1):14938, 2017.
