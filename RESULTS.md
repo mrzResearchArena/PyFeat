@@ -123,7 +123,7 @@ validation on PDB1075 training dataset.
 
 &nbsp;
 
-Table 5: Different classifiers achieved during cross-fold validation on PDB186 testing dataset.
+Table 5: Different classifiers achieved on independent PDB186 testing dataset.
 
 | Classifier | Accuracy (%) |  auROC | auPR   | Sn (%) |  Sp (%)  | F1-Score |  MCC   |
 | :---       | :---:        | :---:  |  :---: | :---:  | :---:    | :---:    | :---:  |
