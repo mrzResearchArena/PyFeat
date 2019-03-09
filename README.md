@@ -1,5 +1,5 @@
 
-# <center>PyFeat: A Python-based Effective Features Generation Tool from DNA, RNA, and Protein Sequences </center>
+# <center>PyFeat: A Python-based Effective Feature Generation Tool from DNA, RNA, and Protein Sequences </center>
 
 ### Authors: Rafsanjani Muhammod, Sajid Ahmed, Dewan Md Farid, Swakkhar Shatabda, Alok Sharma, and Abdollah Dehzangi
 <!-- ### <center> United International University, Dhaka, Bangladesh  </center> -->
